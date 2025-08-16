@@ -1,0 +1,160 @@
+/* Reset + Global */
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to right,pink,blue,violet);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  
+}
+
+a {
+  color: black;
+  
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color:black;
+
+}
+
+.title {
+  font-size: 2em;
+  color:white;
+}
+
+.nav {
+ 
+  display: flex;
+  gap: 20px;
+}
+
+.nav li a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav li a:hover {
+  color: blue;
+}
+
+/* Grid Container (Page 1) */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 40px;
+  flex: 1;
+}
+
+/* Sections */
+.photo-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-img {
+  border-radius: 50%;
+  width: 250px;
+  height: 250px;
+  border: 5px solid #00ffff;
+  transition: transform 0.5s ease;
+}
+
+.profile-img:hover {
+  transform: scale(1.05) rotate(2deg);
+}
+
+.about-section, .contact-section {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  transition: background 0.3s ease;
+}
+
+.about-section:hover,
+.contact-section:hover {
+  background: rgba(0, 255, 255, 0.1);
+}
+
+h2 {
+  margin-bottom: 10px;
+  color:rgb(247, 76, 156);
+}
+
+/* Education Page Grid */
+.education-container {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  padding: 40px;
+  flex: 1;
+}
+
+.edu-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.edu-card:hover {
+  transform: translateY(-10px);
+  background: rgba(0, 255, 255, 0.1);
+}
+
+
+
+/* Responsive Nav */
+
+
+  .nav {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .profile-img {
+    width: 180px;
+    height: 180px;
+  }
+  .proj{
+    /* display: grid; 
+    grid-template-columns: repeat(1,1fr);
+    display: flex;
+    justify-content: center;
+    gap: 30px; */
+    display: flex;
+    gap: 20px;
+  }
+.pro{
+  h1{
+    margin-bottom: 10px;
+  color:rgb(247, 76, 156);
+  }display: flex;
+  justify-content: center;
+  .proj{
+    display: flex;
+    align-items: start;
+    margin-top: 80px;
+  }
+
+}

@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+    /* 5 represent elements in single */
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    padding: 20px;
+   /* linear gradiant is used give a more than one color */
+    background-image: linear-gradient(to right,red,blue,violet);
+}
+.container.element:hover{
+    transform: scale(1,1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+}
